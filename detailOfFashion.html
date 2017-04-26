@@ -57,7 +57,7 @@
             </p>
         </div>
 
-        <div class="zyCollect">
+        <div class="zyCollect" id="zyCollect">
             <span class="icon-star"></span>
             <br>
             收藏文章
@@ -71,37 +71,38 @@
             <div class="zyItem zyTitle"></div>
             <div class="zyItem">
                 <span class="zyDate">2019-09-04</span>
-                <p class="zyContent">
+                <p class="zyContent"
+                   title=" 酉阳面具我在北京设计周展会上见过，很有意思，实物很有质感，现在网店上有产品卖了，还是非常…">
                     酉阳面具我在北京设计周展会上见过，很有意思，实物很有质感，现在网店上有产品卖了，还是非常…
                 </p>
             </div>
             <div class="zyItem">
                 <span class="zyDate">2019-09-04</span>
-                <p class="zyContent">
+                <p class="zyContent" title="与会人员到此一游。产品很有意思">
                     与会人员到此一游。产品很有意思
                 </p>
             </div>
             <div class="zyItem">
                 <span class="zyDate">2019-09-04</span>
-                <p class="zyContent">
+                <p class="zyContent" title="酉阳人民来关注了，家乡风物搬上了大舞台，心里很激动呀。">
                     酉阳人民来关注了，家乡风物搬上了大舞台，心里很激动呀。
                 </p>
             </div>
             <div class="zyItem">
                 <span class="zyDate">2019-09-04</span>
-                <p class="zyContent">
+                <p class="zyContent" title="是3D打印的吗？高科技啊。">
                     是3D打印的吗？高科技啊。
                 </p>
             </div>
             <div class="zyItem">
                 <span class="zyDate">2019-09-04</span>
-                <p class="zyContent">
+                <p class="zyContent" title="参加过北京设计周的人飘过~当时最喜欢的就是这个作品，哈哈">
                     参加过北京设计周的人飘过~当时最喜欢的就是这个作品，哈哈
                 </p>
             </div>
             <div class="zyItem">
                 <span class="zyDate">2019-09-04</span>
-                <p class="zyContent">
+                <p class="zyContent" title="看了这篇文章很想去重庆转转">
                     看了这篇文章很想去重庆转转
                 </p>
             </div>
@@ -221,7 +222,14 @@
                         '</div>');
                 commentInput.val("");
             }
-        })
+        });
+        $("#zyCollect").click(function(){
+            if($(this).hasClass("zyActive")){
+                $(this).removeClass("zyActive");
+            }else{
+                $(this).addClass("zyActive");
+            }
+        });
     });
 </script>
 

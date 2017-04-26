@@ -319,6 +319,9 @@ img{
 .zyPostDetail .zyCollect [class^="icon-"]{
     color: #c8c8c8;
 }
+.zyPostDetail .zyCollect.zyActive [class^="icon-"]{
+    color: #ffce00;
+}
 .zyTags{
     margin: 20px 0px;
 }
@@ -411,12 +414,12 @@ img{
     font-size: 16px;
     color: #e50112;
     position: absolute;
-    bottom:5px;
+    bottom:0px;
     left:5px;
     background: #fff;
     width: 100%;
-    height: 28px;
-    line-height: 28px;
+    height: 32px;
+    line-height: 32px;
 }
 .zySidePanel.zyActive{
     width: 400px;

@@ -39,7 +39,7 @@
             <img src="data/images/postDetail/product9.jpg">
         </div>
 
-        <div class="zyCollect">
+        <div class="zyCollect" id="zyCollect">
             <span class="icon-star"></span>
             <br>
             收藏文章
@@ -54,7 +54,7 @@
             <div class="zyItem">
                 <span class="zyDate">2019-09-04</span>
                 <p class="zyContent">
-                    酉阳面具我在北京设计周展会上见过，很有意思，实物很有质感，现在网店上有产品卖了，还是非常…
+                    现在网店上有产品卖了，还是非常…
                 </p>
             </div>
             <div class="zyItem">
@@ -66,7 +66,7 @@
             <div class="zyItem">
                 <span class="zyDate">2019-09-04</span>
                 <p class="zyContent">
-                    酉阳人民来关注了，家乡风物搬上了大舞台，心里很激动呀。
+                    家乡风物搬上了大舞台，心里很激动呀。
                 </p>
             </div>
             <div class="zyItem">
@@ -185,7 +185,14 @@
                         '</div>');
                 commentInput.val("");
             }
-        })
+        });
+        $("#zyCollect").click(function(){
+            if($(this).hasClass("zyActive")){
+                $(this).removeClass("zyActive");
+            }else{
+                $(this).addClass("zyActive");
+            }
+        });
     });
 </script>
 </body>

@@ -27,7 +27,7 @@
 </section>
 
 <section class="zyMain">
-    <section class="zyList">
+    <section class="zyList" id="zySearchList">
         <div class="zyItem zyTitle"></div>
         <div class="zyItem zyActive">全部</div>
         <div class="zyItem">雅雨安城</div>
@@ -91,6 +91,15 @@
     var pageName="fashion";
 </script>
 <script src='static/js/src/common.js'></script>
+
+<script>
+    $(document).ready(function(){
+        $("#zySearchList .zyItem:not('.zyTitle')").click(function(){
+            $("#zySearchList .zyActive").removeClass("zyActive");
+            $(this).addClass("zyActive");
+        });
+    });
+</script>
 
 </body>
 </html>

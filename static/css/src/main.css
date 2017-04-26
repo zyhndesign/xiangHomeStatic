@@ -1,0 +1,456 @@
+body{
+    padding: 0px;
+    margin: 0px;
+    font-family: Arail,"Microsoft YaHei","Heiti";
+    color: #444;
+}
+a{
+    text-decoration: none;
+}
+ul{
+    list-style: none;
+    padding: 0px;
+    margin: 0px;
+}
+li{
+    display: inline-block;
+}
+img{
+    width: 100%;
+    height: auto;
+    display: block;
+}
+.zyTextEllipsis{
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.zyLogo img{
+    width: auto;
+    display: inline;
+}
+.zyMain{
+    width: 70%;
+    margin: 40px auto;
+}
+.zyDown{
+    color: #fff;
+    font-size: 20px;
+    position: absolute;
+    bottom:40px;
+    left:50%;
+    transform:translateX(-50%);
+    cursor: pointer;
+}
+.zyHidden{
+    display: none!important;
+}
+/*****************components********************/
+.zyInputGroup{
+    position: relative;
+    display: flex;
+    margin: 20px 0px;
+}
+.zyInputGroup .zyInput{
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    flex:1;
+    border:2px solid #444;
+    box-sizing: border-box;
+    padding:0px 10px;
+}
+.zyInputGroup .zyBtn{
+    height: 40px;
+    line-height: 40px;
+    width: 100px;
+    text-align: center;
+    background: #444;
+    color: #fff;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    margin-left: auto;
+    border: none;
+    cursor: pointer;
+}
+
+/***************menu*****************/
+.zyMenu{
+    width: 80%;
+    margin: 0px auto;
+    text-align: center;
+    font-size: 0px;
+}
+.zyMenu li{
+    width: 20%;
+    vertical-align: middle;
+}
+.zyMenu li a{
+    color: #444;
+    font-size: 18px;
+    text-align: center;
+    display: block;
+}
+.zyMenu li a .zyTop{
+    color: #c8c8c8;
+    font-size: 14px;
+    display: block;
+}
+.zyMenu li a:hover .zyTop,.zyMenu li a.zyActive .zyTop{
+    color: #e50112;
+}
+/************页面共用顶部*************/
+.zyPageTop{
+    text-align:center;
+    position: relative;
+}
+.zyPageTop .zyArrow{
+    position: absolute;
+    bottom:40px;
+    left: 50%;
+}
+.zyPageTop .zyInfo{
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-50%);
+    color: #fff;
+}
+.zyPageTop .zyDescription{
+    font-size: 14px;
+    line-height: 21px;
+}
+.zyFooter{
+    text-align: center;
+    background: #f0f0f0;
+    font-size: 14px;
+    padding: 30px 0px;
+}
+
+/*********************lists***********************/
+/**
+*风尚精选分类
+*/
+.zyList{
+    margin: 20px auto;
+}
+.zyList .zyItem{
+    display: inline-block;
+    margin: 10px 5px;
+    border-radius: 5px;
+    background: #f0f0f0;
+    color: #444;
+    padding: 0px 15px;
+    height: 87px;
+    line-height: 87px;
+    vertical-align: top;
+    min-width: 100px;
+    text-align: center;
+}
+.zyList .zyItem.zyTitle{
+    border-right: 1px solid #c8c8c8;
+    border-radius: 0px;
+    padding: 0px 30px 0px 0px;
+    background: url(../../images/src/fashionFeatured.png) no-repeat;
+    height: 87px;
+    width: 271px;
+}
+.zyList .zyItem:not(.zyTitle):hover,.zyList .zyItem.zyActive{
+    background: #000;
+    color: #fff;
+    cursor: pointer;
+}
+/**
+* 评论
+*/
+.zyList1{
+    margin: 20px 0px;
+}
+.zyList1 .zyItem{
+    display: inline-block;
+    margin: 5px 10px;
+    border-radius: 5px;
+    background: #f0f0f0;
+    color: #444;
+    width: 100px;
+    height: 100px;
+    padding: 10px;
+    vertical-align: top;
+}
+.zyList1 .zyItem.zyTitle{
+    background: url(../../images/src/comment.png) no-repeat left center;
+    border-right: 1px solid #c8c8c8;
+    border-radius: 0px;
+    font-size: 24px;
+    text-align: left;
+    width: 158px;
+    height: 100px;
+    vertical-align: middle;
+    padding-right: 20px;
+}
+.zyList1 .zyItem.zyTitle .zySubTitle{
+    font-size: 16px;
+}
+.zyList1 .zyItem .zyDate{
+    color: #c8c8c8;
+    font-size: 12px;
+}
+.zyList1 .zyItem .zyContent{
+    height: 80px;
+    overflow: hidden;
+    margin: 0px;
+    font-size: 12px;
+}
+/*******
+*原创精选的刷选
+*/
+.zyList2{
+
+}
+.zyList2 .zyItem{
+    border-right: 1px solid #c8c8c8;
+    color: #444;
+    display: inline-block;
+    width: 100px;
+    text-align: center;
+    margin-bottom: 50px;
+}
+.zyList2 .zyItem.zyTitle{
+    background: url(../../images/src/original.png) no-repeat left center;
+    border-right: 1px solid #c8c8c8;
+    width: 270px;
+    height: 93px;
+    padding-right: 20px;
+    float: left;
+    margin: 0px;
+}
+.zyList2 .zyItem:not(.zyTitle):hover,.zyList2 .zyItem.zyActive{
+    color: #a05a00;
+    cursor: pointer;
+}
+/***
+*原创精选刷选结果
+*/
+.zyList3{
+    width: 90%;
+    margin: auto;
+    font-size: 0px;
+}
+.zyList3 .zyItem{
+    width: 18%;
+    margin-right: 2.5%;
+    margin-top: 2.5%;
+    display: inline-block;
+    font-size:14px;
+    vertical-align: top;
+}
+.zyList3 .zyItem:nth-child(5n){
+    margin-right: 0px;
+}
+.zyList3 .zyItem .zyTitle{
+    font-size: 16px;
+    font-weight: normal;
+    margin: 10px 0px;
+    color: #444;
+}
+.zyList3 .zyItem .zyPrice{
+    color: #e50112;
+    font-style: italic;
+}
+.zyList3 .zyItem .zyTip{
+    font-size: 12px;
+    color: #c8c8c8;
+}
+/************************post list******************************/
+.zyListFirstBig{
+    margin: 30px auto;
+    font-size: 0px;
+}
+.zyListFirstBig .zyItem{
+    width: 32%;
+    margin-top: 2%;
+    margin-left: 2%;
+    position: relative;
+    vertical-align: top;
+}
+.zyListFirstBig .zyItem:nth-child(3n+1){
+    margin-left: 0px;
+}
+.zyListFirstBig .zyItem.zyFirst{
+    width: 66%;
+    float: left;
+}
+.zyListFirstBig .zyItem .zyInfo{
+    color: #fff;
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-50%);
+    font-size:14px;
+}
+/**********************文章详情***************************/
+.zyPostDetail{
+    margin: 50px auto;
+}
+.zyPostDetail .zyInfo{
+    text-align: center;
+}
+.zyPostDetail .zyInfo .zyDate{
+
+}
+.zyPostDetail .zyInfo .zyTitle{
+    color: #444;
+}
+
+.zyPostDetail p{
+    width: 80%;
+    margin: 20px auto;
+    font-size: 14px;
+    line-height: 21px;
+}
+.zyPostDetail .zyCollect{
+    text-align: center;
+    width: 100px;
+    margin: 50px auto;
+    font-size: 20px;
+    color: #444;
+    cursor: pointer;
+}
+.zyPostDetail .zyCollect [class^="icon-"]{
+    color: #c8c8c8;
+}
+.zyTags{
+    margin: 20px 0px;
+}
+.zyTags .zyTag{
+    border-radius: 20px;
+    display: inline-block;
+    margin: 5px;
+    padding: 5px 10px;
+    background: #c8c8c8;
+}
+.zyComments{
+
+}
+/**************文章详情页旁边的商品介绍**********************/
+.zySidePanel{
+    position: fixed;
+    top:0px;
+    right:0px;
+    height: 100%;
+    width: 100px;
+    padding: 10px;
+    background: #f0f0f0;
+    box-sizing: border-box;
+    transition:all 0.5s ease-in;
+}
+.zySidePanel .zyExpand{
+    position: absolute;
+    top:50%;
+    left:-30px;
+    font-size: 36px;
+    font-weight: bold;
+    cursor: pointer;
+}
+.zySidePanel .zyTitle{
+    font-size: 18px;
+    text-align: center;
+    font-weight: normal;
+    margin: 0px;
+}
+.zySidePanel .zyTitle .zySubTitle{
+    font-size: 14px;
+    display: block;
+}
+.zySidePanel .zySeg{
+    font-size: 0px;
+    border-top:1px dashed #c8c8c8;
+    margin: 5px 0px;
+}
+.zySidePanel .zyLinks{
+    display: block;
+    margin: 10px 0px;
+    position: relative;
+    color: #444;
+    background: #fff;
+}
+.zySidePanel .zyLinks img{
+    width: 80px;
+}
+.zySidePanel .zyLinks .zyInfo{
+    position: absolute;
+    top:0px;
+    left:80px;
+    right:40px;
+    height: 100%;
+    padding: 5px;
+    overflow: hidden;
+    box-sizing: border-box;
+    display: none;
+}
+.zySidePanel .zyLinks .zyMore{
+    position: absolute;
+    right: 5px;
+    top:50%;
+    transform:translateY(-50%);
+    font-size: 14px;
+    border: 1px solid #c8c8c8;
+    border-radius: 5px;
+    padding: 8px;
+    display: none;
+}
+.zySidePanel .zyLinks .zyInfo .zyInfoTitle{
+    font-size: 14px;
+    margin: 0px;
+}
+.zySidePanel .zyLinks .zyInfo .zyInfoDesc{
+    font-size: 10px;
+    margin: 5px 0px;
+}
+.zySidePanel .zyLinks .zyInfo .zyInfoPrice{
+    font-size: 16px;
+    color: #e50112;
+    position: absolute;
+    bottom:5px;
+    left:5px;
+    background: #fff;
+    width: 100%;
+    height: 28px;
+    line-height: 28px;
+}
+.zySidePanel.zyActive{
+    width: 400px;
+}
+.zySidePanel.zyActive .zyLinks .zyInfo,.zySidePanel.zyActive .zyLinks .zyMore{
+    display: block;
+}
+/*************************原创精品推荐********************/
+.zyFeatureItem{
+    position: relative;
+    margin: 80px auto;
+}
+.zyFeatureItem .zyBg{
+
+}
+.zyFeatureItem .zyBgChild{
+    width: auto;
+    position: absolute;
+    top:0px;
+    left:50%;
+    transform:translateX(-50%);
+}
+.zyFeatureItem .zyChildren{
+    text-align: center;
+    font-size: 0px;
+    width: 88%;
+    margin:-100px auto 0px auto;
+}
+.zyFeatureItem .zyChildren li{
+    width: 23%;
+    padding: 0 1%;
+}
+.zyFeatureItem .zyChildren1 li{
+    width: 45%;
+    padding:0 2%;
+}
+

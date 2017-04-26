@@ -1,0 +1,164 @@
+
+.zyFeatured{
+    padding: 0px 15%;
+    position: relative;
+}
+.zyFeatured .zyTitle{
+    font-size: 24px;
+    font-weight: bold;
+    color: #444;
+    display: inline-block;
+    position: absolute;
+    top:50%;
+    left:15%;
+    transform:translateY(-50%);
+    margin: 0px;
+}
+.zyFeatured .zySubTitle{
+    font-size:14px;
+    font-weight: normal;
+    display: block;
+}
+.zyFeaturedList{
+    margin-left: 160px;
+    border-left:1px solid #c8c8c8;
+    padding: 0px 40px;
+}
+.zyFeaturedList li{
+    display: block;
+    margin: 20px 0px;
+}
+.zyFeaturedList .zyItemType{
+    color: #a05a00;
+}
+.zyFeaturedList .zyItemDate{
+    color: #c8c8c8;
+    font-style: italic;
+    margin: 0px 20px 0px 30px;
+}
+.zyFeaturedList .zyItemTitle{
+    display: inline-block;
+    width: 60%;
+    margin: 0px;
+    vertical-align: top;
+    font-weight: normal;
+    font-size: 14px;
+    color: #444;
+}
+
+.zyPostsItem{
+    position: relative;
+}
+.zyPostsItem .zyInfo{
+    position: absolute;
+    bottom:20%;
+    right:50%;
+    width: 40%;
+    transform:translateX(50%);
+    color: #fff;
+    text-align: center;
+}
+.zyPostsItem .zyLink{
+    padding: 10px;
+    border: 2px solid #fff;
+    color: #fff;
+    display: inline-block;
+    font-size: 14px;
+}
+.zyPostsItem .zyLink [class^="icon-"]{
+    margin-left: 10px;
+}
+.zyPostsItem .zyCategory{
+    margin: 10px 0px;
+}
+.zyPostsItem .zyTitle{
+    margin: 20px 10px;
+    font-weight: normal;
+}
+.zyPostsItem .zyMore{
+    background: #f0f0f0;
+    height: 300px;
+    line-height: 300px;
+    text-decoration: underline;
+    font-size: 24px;
+    display: block;
+    text-align: center;
+}
+/*********************分页标志***************/
+.zyPagination{
+    position: absolute;
+    right:20px;
+    width: 10px;
+    top:50%;
+    transform:translateY(-50%);
+    z-index: 5;
+}
+.zyPagination .zyItem{
+    width: 10px;
+    height: 10px;
+    background: #c8c8c8;
+    border-radius: 50%;
+    display: block;
+    margin: 5px 0px;
+}
+.zyPagination .zyItem.zyActive{
+    background: #fff;
+}
+.zyAbout{
+    font-size: 0px;
+    padding:50px 15%;
+}
+.zyAbout .zyColumn{
+    display: inline-block;
+    vertical-align: middle;
+    width: 50%;
+}
+.zyAbout .zyInfo{
+    font-size: 14px;
+    line-height: 21px;
+    padding:0px 20px 0px 70px;
+    position: relative;
+    box-sizing: border-box;
+}
+.zyAbout .zyInfo:before{
+    content: '';
+    position: absolute;
+    left:0px;
+    top:0px;
+    width: 40px;
+    height: 100%;
+    background: url(../../images/src/logo.png) no-repeat center center;
+    background-size:contain;
+}
+.zyAction{
+    position: relative;
+}
+.zyActionBtns{
+    position: absolute;
+    bottom:40px;
+    left:50%;
+    width: 500px;
+    margin-left: -250px;
+    text-align: center;
+}
+.zyActionBtns .zySep{
+    background: #fff;
+    display: inline-block;
+    width: 1px;
+    margin: 0px 20px;
+    font-size:0px;
+    vertical-align: top;
+    height: 55px;
+}
+.zyActionBtns .zyActionBtn{
+    color: #fff;
+    border: 1px solid #fff;
+    font-size: 20px;
+    text-align: center;
+    display: inline-block;
+    padding: 5px 15px;
+}
+.zyActionBtns .zyActionBtn .zyText{
+    font-size: 14px;
+    display: block;
+}

@@ -45,46 +45,6 @@
     font-size: 14px;
     color: #444;
 }
-
-.zyPostsItem{
-    position: relative;
-}
-.zyPostsItem .zyInfo{
-    position: absolute;
-    bottom:20%;
-    right:50%;
-    width: 40%;
-    transform:translateX(50%);
-    color: #fff;
-    text-align: center;
-}
-.zyPostsItem .zyLink{
-    padding: 10px;
-    border: 2px solid #fff;
-    color: #fff;
-    display: inline-block;
-    font-size: 14px;
-}
-.zyPostsItem .zyLink [class^="icon-"]{
-    margin-left: 10px;
-}
-.zyPostsItem .zyCategory{
-    margin: 10px 0px;
-}
-.zyPostsItem .zyTitle{
-    margin: 20px 10px;
-    font-weight: normal;
-}
-.zyPostsItem .zyMore{
-    background: #f0f0f0;
-    color: #444;
-    height: 300px;
-    line-height: 300px;
-    text-decoration: underline;
-    font-size: 24px;
-    display: block;
-    text-align: center;
-}
 /*********************分页标志***************/
 .zyPagination{
     position: absolute;

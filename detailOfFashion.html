@@ -8,6 +8,9 @@
 </head>
 <body>
 
+<script src="logoFixed.js"></script>
+
+
 <script src="menu.js"></script>
 
 <section class="zyPageTop">
@@ -114,7 +117,7 @@
     </section>
 </section>
 
-<section class="zySidePanel">
+<section class="zySidePanel" id="zySidePanel">
     <span class="zyExpand icon-arrow-left" id="zyExpand" data-current-status="close"></span>
     <h2 class="zyTitle">
         在售产品
@@ -189,49 +192,76 @@
     </a>
 </section>
 
+<section class="zyPosts" id="zyPosts">
+    <div class="zyPostsItem">
+        <img src="data/images/index/l_articlefm1.jpg">
+        <div class="zyInfo">
+            <a href="#" class="zyLink">
+                去看看
+                <span class="icon-arrow-right"></span>
+            </a>
+            <h2 class="zyCategory">通道故事</h2>
+            <h3 class="zyTitle">Dong Shine侗昕</h3>
+            <p class="zyDescription">
+                作品“Dong Shine”（侗昕），由Lucia Marengo和左亚婷、宁彤彤设计。作为为游客而设计的旅游产品，通过对侗家织布常用的绕线篓，进行竹编结构的再设计，通过手势控制音乐的播放与暂停，使之可以作为灯以及音乐播放器来使用。装饰采用侗锦织带，及从中提取的图案，以简笔画的形式，讲述当地故事。
+            </p>
+        </div>
+        <div class="zyPagination">
+            <span class="zyItem zyActive"></span>
+            <span class="zyItem"></span>
+            <span class="zyItem"></span>
+        </div>
+    </div>
+    <div class="zyPostsItem">
+        <img src="data/images/index/l_articlefm2.jpg">
+        <div class="zyInfo">
+            <a href="#" class="zyLink">
+                去看看
+                <span class="icon-arrow-right"></span>
+            </a>
+            <h2 class="zyCategory">通道故事</h2>
+            <h3 class="zyTitle">她剪她世界 | 她纸她天地</h3>
+            <p class="zyDescription">
+                来自新通道•剪纸工作坊。覃奶时清，用剪刀作画，用纸思索，用想象构成生活，用心看世界。她开心时剪，不开心也剪；农忙时剪，农闲时也剪。最远到的地方是南宁，却不似旁人把愿望寄托在远方，她只观不语却也深悉这八十光景的世界，她只笑不答却也洞晓这人间百态。纸于她是水，剪于她是舟。一汀一漓都是风景，一沉一浮都为生动。
+            </p>
+        </div>
+        <div class="zyPagination">
+            <span class="zyItem"></span>
+            <span class="zyItem zyActive"></span>
+            <span class="zyItem"></span>
+        </div>
+    </div>
+    <div class="zyPostsItem">
+        <img src="data/images/index/l_articlefm3.jpg">
+        <div class="zyInfo">
+            <a href="#" class="zyLink">
+                去看看
+                <span class="icon-arrow-right"></span>
+            </a>
+            <h2 class="zyCategory">花瑶花</h2>
+            <h3 class="zyTitle">滩头年画传承人钟石棉</h3>
+            <p class="zyDescription">
+                滩头年画是隆回滩头镇汉族民间工艺品之一。中国汉族特有的一种绘画体裁。滩头年画的种类在最盛期达六十多种。滩头年画多以祝福新年的喜庆丰登，免除灾祸的古老民间习俗为题材，从题材内容和品种来看，可分为神像、吉祥如意、故事三大类。这次隆回之行我们专门来到滩头年画传承人钟石棉的工作坊参观拍摄。作品“Dong Shine”（侗昕），由Lucia Marengo和左亚婷、宁彤彤设计。作为为游客而设计的旅游产品，通过对侗家织布常用的绕线篓，进行竹编结构的再设计，通过手势控制音乐的播放与暂停，使之可以作为灯以及音乐播放器来使用。装饰采用侗锦织带，及从中提取的图案，以简笔画的形式，讲述当地故事。
+            </p>
+        </div>
+        <div class="zyPagination">
+            <span class="zyItem"></span>
+            <span class="zyItem"></span>
+            <span class="zyItem zyActive"></span>
+        </div>
+    </div>
+</section>
+
 <script src="footer.js"></script>
+
+<script src="blackout.js"></script>
 
 <script src="static/js/lib/jquery-2.0.3.min.js"></script>
 <script>
     var pageName="fashion";
 </script>
 <script src='static/js/src/common.js'></script>
-<script>
-    $(document).ready(function(){
-        $("#zyExpand").click(function(){
-            var el=$(this);
-            if(el.data("current-status")=="close"){
-                el.data("current-status","open");
-                el.parent().addClass("zyActive");
-                el.removeClass("icon-arrow-left").addClass("icon-arrow-right");
-            }else{
-                el.data("current-status","close");
-                el.parent().removeClass("zyActive");
-                el.removeClass("icon-arrow-right").addClass("icon-arrow-left");
-            }
-        });
-        $("#zySendComment").click(function(){
-            var commentInput=$("#zyCommentInput"),
-                commentContent=commentInput.val();
-            if(commentContent){
-                $("#zyCommentList").append('<div class="zyItem">'+
-                        '<span class="zyDate">2019-09-04</span>'+
-                        '<p class="zyContent">'+
-                        commentContent+
-                        '</p>'+
-                        '</div>');
-                commentInput.val("");
-            }
-        });
-        $("#zyCollect").click(function(){
-            if($(this).hasClass("zyActive")){
-                $(this).removeClass("zyActive");
-            }else{
-                $(this).addClass("zyActive");
-            }
-        });
-    });
-</script>
+<script src="static/js/src/postDetail.js"></script>
 
 </body>
 </html>

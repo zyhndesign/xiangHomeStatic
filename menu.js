@@ -1,5 +1,5 @@
-document.write(['<nav class="zyMenuContainer">',
-    '<ul class="zyMenu" id="zyMenu">',
+document.write([
+    '<ul class="zyMenu zyMenuFixed" id="zyMenu">',
     '<li>',
     '<a href="index.html" data-page-name="index">',
     '<span class="zyTop">Home</span>',
@@ -29,5 +29,4 @@ document.write(['<nav class="zyMenuContainer">',
     '乡•原创精选',
     '</a>',
     '</li>',
-    '</ul>',
-    '</nav>'].join(""));
+    '</ul>'].join(""));

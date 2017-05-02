@@ -7,6 +7,9 @@
 </head>
 <body>
 
+<script src="logoFixed.js"></script>
+
+
 <script src="menu.js"></script>
 
 
@@ -183,6 +186,8 @@
 <script src='static/js/src/common.js'></script>
 <script>
     $(document).ready(function(){
+        common.bindScroll(300);
+        common.bindMouseMove(100);
         $("#zySearchBtn").click(function(){
             if($("#zySearchInput").val()){
                 $("#zyFeaturedContainer").addClass("zyHidden");
